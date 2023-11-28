@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Frutas Galicia</title>
+
+    <!-- Importan la fuente Lato para su uso -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Distintos archivos CSS utilizados -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
+
+    <!-- Script que añade los iconos -->
+    <script src="https://kit.fontawesome.com/98fc93b2ea.js" crossorigin="anonymous"></script>
+
+    <!-- Script que implementa el funcionamiento del menú hamburguesa -->
+    <script src="scripts/hamburgerMenu.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--Oculto por defecto-->
+        <div id="mobileMenu">
+            <a href="javascript:void(0);" class="hamburguesa" onclick="showHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <img class="logo" alt="logo" src="img/btlogo.png">
+        <nav>
+            <ul>
+                <li><a id="select" href="#"><i id="homeIcon" class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="shop.html"><i id="storeIcon" class="fa-solid fa-store"></i>Tienda</a></li>
+                <li><a href="info.html"><i id="infoIcon" class="fa-solid fa-circle-info"></i>Información</a></li>
+            </ul>
+        </nav>
+        <i id="shoppingCart" class="fa-solid fa-cart-shopping"></i>
+
+    </header>
+
+    <div id="mobileNav">
+        <a href="#">Inicio</a>
+        <a href="shop.html">Tienda</a>
+        <a href="info.html">Info</a>
+    </div>
+
+    <main>
+
+        <section id="cover">
+            <img id="mainImage" src="img/cover.png" alt="Imagen de portada">
+        </section>
+
+        <div id="center">
+
+            <img id="orangeTree" src="img/oranges.jpg" alt="Arbol naranja">
+
+            <aside>
+                <p id="asideTitle">¡Haz tu pedido!</p>
+                <p id="asideP">En Frutas Galicia, nos enorgullece ofrecer a nuestros clientes la fruta más fresca y
+                    deliciosa
+                    directamente a su puerta. Somos apasionados por brindar a nuestros clientes una experiencia de
+                    compra de frutas excepcional, y nos esforzamos por garantizar que cada bocado sea una delicia
+                    para
+                    tus sentidos.</p>
+
+                <a href="shop.html" id="asideButton">Ir a la tienda</a>
+
+
+            </aside>
+        </div>
+
+
+        <section id="enviosPago">
+            <div class="block">
+                <i id="truck" class="fa-solid fa-truck"></i>
+                <p>Envíos en 24h dentro de la península.
+                    De Lunes a Sábado (Días festivo excluídos)
+                    Posibilidad de entrega en puntos de recogida habilitados.</p>
+            </div>
+            <div class="block">
+                <i id="money" class="fa-solid fa-money-bill"></i>
+                <p>Variedad de métodos de pago.
+                    Puedes pagarnos desde tarjeta de crédito, transferencia bancaria, PayPal, Paysafecard y pago en mano
+                    (a la hora de la entrega del paquete).</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="logoCopy">
+            <img class="logo" alt="logo" src="img/btlogo.png">
+            <p>© 2023. Frutas Galicia. Todos los derechos reservados</p>
+        </div>
+        <div id="socialMedia">
+            <div id="phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+34 999 99 99 99</span>
+                <span>+34 666 66 66 66</span>
+            </div>
+            <div id="enlaces">
+                <p>Visita nuestras redes sociales</p>
+
+                <div>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Frutas Galicia</title>
+
+    <!-- Importan la fuente Lato para su uso -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Distintos archivos CSS utilizados -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/infoStyle.css">
+
+    <!-- Script que añade los iconos -->
+    <script src="https://kit.fontawesome.com/98fc93b2ea.js" crossorigin="anonymous"></script>
+    
+    <!-- Script que implementa el funcionamiento del menú hamburguesa -->
+    <script src="scripts/hamburgerMenu.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--Oculto por defecto-->
+        <div id="mobileMenu">
+            <a href="javascript:void(0);" class="hamburguesa" onclick="showHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <img class="logo" alt="logo" src="img/btlogo.png">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i id="homeIcon" class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="shop.html"><i id="storeIcon" class="fa-solid fa-store"></i>Tienda</a></li>
+                <li><a id="select" href="#"><i id="infoIcon" class="fa-solid fa-circle-info"></i>Información</a></li>
+            </ul>
+        </nav>
+        <i id="shoppingCart" class="fa-solid fa-cart-shopping"></i>
+    </header>
+
+    <div id="mobileNav">
+        <a href="index.html">Inicio</a>
+        <a href="shop.html">Tienda</a>
+        <a href="#">Info</a>
+    </div>
+
+    <main>
+
+        <section>
+            <h1>Sobre Nosotros</h1>
+            <p>En Frutas Galicia, nos enorgullece ofrecer una amplia variedad de frutas seleccionadas cuidadosamente,
+                directamente desde los campos de Galicia. Ubicados estratégicamente en el polígono industrial de
+                Porriño, nos convertimos en el puente entre la naturaleza generosa de nuestra región y tu mesa.</p>
+            <p>Nuestro compromiso con la frescura es evidente en cada manzana crujiente, cada jugoso melocotón y cada
+                racimo de uvas que ofrecemos. Trabajamos en estrecha colaboración con agricultores locales,
+                asegurándonos de que solo las frutas más deliciosas y nutritivas lleguen a tu puerta.</p>
+        </section>
+        <section id="contact">
+            <article>
+                <iframe id="map" class="map_part" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=42.12872900339352, -8.62064695673869&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </article>
+            <article>
+                <h2>Formulario de contacto</h2>
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text">
+                    <label for="mail">Correo Electrónico</label>
+                    <input id="mail" type="email" placeholder="ejemplo@gmail.com">
+                    <label for="phone">Teléfono móvil</label>
+
+                    <div id="number">
+                        <select id="prefix">
+                            <option value="es">+34</option>
+                            <option value="us">+1</option>
+                        </select>
+                        <input id="phone" type="tel">
+                    </div>
+
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" placeholder="Introduce aquí tu mensaje"></textarea>
+                    
+
+                    <div id="newsletterCheckbox">
+                        <input id="newsletter" type="checkbox" checked>
+                        <label for="newsletter">Suscribirte al Newsletter</label>
+                    </div>
+
+                    <input id="send" type="button" value="Enviar">
+                </form>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div id="logoCopy">
+            <img class="logo" alt="logo" src="img/btlogo.png">
+            <p>© 2023. Frutas Galicia. Todos los derechos reservados</p>
+        </div>
+        <div id="socialMedia">
+            <div id="phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+34 999 99 99 99</span>
+                <span>+34 666 66 66 66</span>
+            </div>
+            <div id="enlaces">
+                <p>Visita nuestras redes sociales</p>
+
+                <div>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
