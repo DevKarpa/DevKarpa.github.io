@@ -1,0 +1,120 @@
+nav ul li:first-child {
+    background-color: #FF4E00;
+    border-radius: 10px;
+}
+
+#select {
+    color: white;
+}
+
+#mainImage {
+    width: 100%;
+    height: auto;
+}
+
+#center {
+    display: flex;
+}
+
+#center img {
+    width: 50%;
+    height: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+#asideTitle {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    color: #FF4E00;
+}
+
+#asideP {
+    font-size: 2em;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#asideButton {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+    background-color: #FF4E00;
+    font-size: 2em;
+    transition-duration: 500ms;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#asideButton:hover {
+    transition-duration: 500ms;
+    background-color: #FF1E14;
+}
+
+#enviosPago {
+    display: flex;
+}
+
+.block {
+    display: flex;
+    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.block i {
+    font-size: 3em;
+    color: #FF4E00;
+}
+
+.block p {
+    margin-left: 50px;
+}
+
+@media screen and (max-width:1500px) {
+    #asideTitle {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #asideP, #asideButton{
+        font-size: 1.5em;
+    }
+
+    .block {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #asideTitle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #asideP {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #center img {
+        display: none;
+    }
+
+    #enviosPago {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+}

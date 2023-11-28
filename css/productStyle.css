@@ -1,0 +1,116 @@
+#map ul{
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    margin-left: 100px;
+}
+
+#map ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#map ul li a:hover{
+    text-decoration: underline;
+}
+
+#map ul li:not(:first-child)::before{
+    content: "> ";
+}
+
+#mainSection{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 25%;
+}
+
+#fruitImg > img{
+    width: 400px;
+    margin: 50px;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+#buy{
+    float: right;
+}
+
+#price{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#cantidad{
+    padding: 5px;
+    border: 2px solid #FF4E00;
+    border-radius: 8px;
+    margin: 0;
+    text-align: center;
+}
+
+#cantidad input{
+    background-color: #FF4E00;
+}
+
+#addToCart{
+    border: 2px solid #FF4E00;
+    border-radius: 8px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    background-color: #FF4E00;
+}
+
+#addToCart:hover{
+    background-color: #FF1E14;
+    transition-duration: 500ms;
+}
+
+#addToCart p{
+    margin: 0;
+}
+
+#infoSection{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 80px;
+}
+
+
+th, td{
+    border: 2px solid #FF4E00;
+    background-color: rgba(255, 148, 20, 0.8);
+    border-radius: 5px;
+    font-weight: 100px; 
+}
+
+@media screen and (max-width:1450px) {
+    #mainSection{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #mainSection{
+        flex-direction: column;
+    }
+    #infoSection{
+        flex-direction: column;
+    }
+    #extraInfo{
+        margin-bottom: 60px;
+    }
+    #fruitImg > img{
+        width: 100%;
+        margin: 0;
+    }
+}

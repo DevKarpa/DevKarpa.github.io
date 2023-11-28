@@ -1,0 +1,60 @@
+nav ul li:last-child {
+    background-color: #FF4E00;
+    border-radius: 10px;
+}
+
+#select {
+    color: white;
+}
+
+section{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+#map{
+    width: 400px;
+    height: 400px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input, form textarea{
+    border-color: #FF4E00;
+    border-radius: 10px;
+    transition-duration: 500ms;
+}
+
+form #send:hover{
+    transition-duration: 500ms;
+    background-color: #FF4E00;
+}
+
+@media screen and (max-width:800px) {
+    section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #map{
+        height: 300px;
+        width: 100%;
+    }
+
+}

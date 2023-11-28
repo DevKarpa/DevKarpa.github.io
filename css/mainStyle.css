@@ -1,0 +1,149 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(255, 148, 20, 1) 6%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    align-items: center;
+    
+}
+
+#mobileMenu {
+    display: none;
+}
+
+#mobileNav {
+    display: none;
+    justify-content: center;
+}
+
+nav {
+    margin: auto;
+    margin-right: 0;
+}
+
+.logo {
+    width: 8%;
+    margin: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    border: 3px solid #ff4e00;
+    border-radius: 15px;
+}
+
+nav ul li {
+    font-size: 1.3em;
+    transition-duration: 400ms;
+}
+
+nav ul li:hover {
+    background-color: #FF9414;
+    transition-duration: 400ms;
+    border-radius: 10px;
+}
+
+nav ul li:not(:last-child) {
+    border-right: 3px solid #ff4e00;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF4E00;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#shoppingCart {
+    font-size: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #ff4e00;
+}
+
+footer {
+    margin-top: 30px;
+    background: linear-gradient(0deg, rgba(255, 148, 20, 1) 6%, rgba(255, 255, 255, 1) 100%);
+
+}
+
+footer #logoCopy {
+    float: left;
+    width: 70%;
+}
+
+footer #logoCopy p {
+    margin: 0px;
+}
+
+footer #socialMedia {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer #socialMedia #enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #socialMedia #enlaces a{
+    color: #FF4E00;
+    font-size: 2em;
+}
+
+footer #socialMedia span {
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    header {
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        margin: 5px;
+        width: 15%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #shoppingCart, #mobileMenu a{
+        font-size: 3em;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #ff4e00;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    #mobileNav a{
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #FF4E00;
+        border-radius: 30px;
+        color: white;
+        background-color: #FF4E00;
+    }
+
+    footer #phone {
+        font-size: 0.8em;
+    }
+
+    footer #socialMedia #enlaces{
+        clear: both;
+    }
+}
