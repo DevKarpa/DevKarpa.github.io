@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Frutas Galicia</title>
 
-    <!-- Importan la fuente Lato para su uso -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
     <!-- Distintos archivos CSS utilizados -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/indexStyle.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41W8N5WQ01"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-41W8N5WQ01');
+    </script>
 
     <!-- Script que añade los iconos -->
     <script src="https://kit.fontawesome.com/98fc93b2ea.js" crossorigin="anonymous"></script>
@@ -55,24 +60,24 @@
             <img id="mainImage" src="img/cover.png" alt="Imagen de portada">
         </section>
 
-        <div id="center">
+        <section id="center">
 
             <img id="orangeTree" src="img/oranges.jpg" alt="Arbol naranja">
 
-            <aside>
-                <p id="asideTitle">¡Haz tu pedido!</p>
-                <p id="asideP">En Frutas Galicia, nos enorgullece ofrecer a nuestros clientes la fruta más fresca y
+            <article>
+                <p id="articleTitle">¡Haz tu pedido!</p>
+                <p id="articleP">En Frutas Galicia, nos enorgullece ofrecer a nuestros clientes la fruta más fresca y
                     deliciosa
                     directamente a su puerta. Somos apasionados por brindar a nuestros clientes una experiencia de
                     compra de frutas excepcional, y nos esforzamos por garantizar que cada bocado sea una delicia
                     para
                     tus sentidos.</p>
 
-                <a href="shop.html" id="asideButton">Ir a la tienda</a>
+                <a href="shop.html" id="articleButton">Ir a la tienda</a>
 
 
-            </aside>
-        </div>
+            </article>
+        </section>
 
 
         <section id="enviosPago">

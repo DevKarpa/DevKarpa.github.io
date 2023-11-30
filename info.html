@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información - Frutas Galicia</title>
 
-    <!-- Importan la fuente Lato para su uso -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
     <!-- Distintos archivos CSS utilizados -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/infoStyle.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41W8N5WQ01"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-41W8N5WQ01');
+    </script>
 
     <!-- Script que añade los iconos -->
     <script src="https://kit.fontawesome.com/98fc93b2ea.js" crossorigin="anonymous"></script>
@@ -72,14 +77,14 @@
                     <input id="name" type="text">
                     <label for="mail">Correo Electrónico</label>
                     <input id="mail" type="email" placeholder="ejemplo@gmail.com">
-                    <label for="phone">Teléfono móvil</label>
+                    <label for="tel">Teléfono móvil</label>
 
                     <div id="number">
                         <select id="prefix">
                             <option value="es">+34</option>
                             <option value="us">+1</option>
                         </select>
-                        <input id="phone" type="tel">
+                        <input id="tel" type="tel">
                     </div>
 
                     <label for="message">Mensaje</label>
