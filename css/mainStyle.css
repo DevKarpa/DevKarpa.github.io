@@ -143,8 +143,13 @@ footer #socialMedia span {
         background-color: #FF4E00;
     }
 
+    footer{
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
     footer #phone {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     footer #socialMedia #enlaces{

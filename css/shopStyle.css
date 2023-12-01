@@ -26,9 +26,21 @@ section{
 
 section img{
     width: 300px;
+    
+}
+
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px solid #FF4E00;
+    border-bottom: 3px solid #FF4E00;;
+    border-radius: 30px;
+    background-color: #FF9414;
 }
 
 article{
     margin: 20px;
-
+    border: 3px solid #FF4E00;
+    border-radius: 30px;
+    border-bottom: 0;
 }
