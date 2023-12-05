@@ -48,4 +48,5 @@ article{
     border: 3px solid #FF4E00;
     border-radius: 30px;
     border-bottom: 0;
+    transition-duration: 500ms;
 }

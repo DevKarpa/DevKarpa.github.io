@@ -100,8 +100,34 @@ footer #footerNumber i{
 footer #footerSocial #footerLinks a{
     color: #FF4E00;
     font-size: 40px;
-
+    transition-duration: 500ms;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+
+footer #footerSocial #footerLinks a:hover{
+    transition-duration: 500ms;
+    border-radius: 10px;
+}
+
+footer #footerSocial #footerLinks a:first-child:hover{
+    color: white;
+    background-color: black;
+}
+
+footer #footerSocial #footerLinks a:nth-child(2):hover{
+    color: magenta;
+}
+
+footer #footerSocial #footerLinks a:nth-last-child(2):hover{
+    color: rgb(65, 182, 255);
+}
+
+footer #footerSocial #footerLinks a:last-child:hover{
+    color: rgb(0, 110, 255);
+}
+
+
 
 footer #footerSocial p{
     margin: 0;
