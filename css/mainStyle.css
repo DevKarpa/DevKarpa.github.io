@@ -74,36 +74,54 @@ nav ul li a {
 
 footer {
     margin-top: 30px;
-    background: linear-gradient(0deg, rgba(255, 148, 20, 1) 6%, rgba(255, 255, 255, 1) 100%);
+    border-top:3px solid #FF4E00;
+    background: linear-gradient(180deg, rgba(255, 148, 20, 1) 6%, rgba(255, 255, 255, 1) 100%);
 
 }
 
-footer #logoCopy {
-    float: left;
-    width: 70%;
+footer .logo{
+    margin: 20px;
 }
 
-footer #logoCopy p {
-    margin: 0px;
+footer #footerNumber i{
+    color: #FF4E00;
 }
 
-footer #socialMedia {
-    font-size: 1.3em;
-    text-align: center;
-}
-
-footer #socialMedia #enlaces{
+#footerCenter{
     display: flex;
     flex-direction: column;
+    float: right;
+    padding-top: 30px;
+    gap: 30px;
+    font-size: 1.3em;
+    margin-right: 20px;
 }
 
-footer #socialMedia #enlaces a{
+footer #footerSocial #footerLinks a{
     color: #FF4E00;
-    font-size: 2em;
+    font-size: 40px;
+
 }
 
-footer #socialMedia span {
-    display: block;
+footer #footerSocial p{
+    margin: 0;
+}
+
+footer #footerNumber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #footerSocial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #copy{
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width:800px) {
@@ -144,15 +162,27 @@ footer #socialMedia span {
     }
 
     footer{
-        flex-direction: row-reverse;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    footer #phone {
-        font-size: 0.6em;
+    footer .logo{
+        width: 20%;
+        margin-bottom: 20px;
     }
 
-    footer #socialMedia #enlaces{
-        clear: both;
+    footer #footerCenter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        font-size: 1em;
+        
+    }
+
+    footer #copy{
+        margin-top: 30px;
+        padding: 0;
     }
 }

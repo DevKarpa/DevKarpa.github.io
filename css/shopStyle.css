@@ -24,6 +24,11 @@ section{
     justify-content: center;
 }
 
+article:hover{
+    transition-duration: 200ms;
+    box-shadow: 5px 5px 5px #FF9414;
+}
+
 section img{
     width: 300px;
     

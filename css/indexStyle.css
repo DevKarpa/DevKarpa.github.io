@@ -31,6 +31,7 @@ article {
     font-size: 3em;
     text-align: center;
     color: #FF4E00;
+    margin: 5%;
 }
 
 #articleP {
@@ -42,15 +43,16 @@ article {
 #articleButton {
     text-align: center;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
     color: white;
     background-color: #FF4E00;
     font-size: 2em;
     transition-duration: 500ms;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 3px 3px 3px black;
 }
 
 #articleButton:hover {
